@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Bash script that displays "Best School" 9 times, then "Hi", and finally "Best School" one last time.
+
+counter=0  # Initialize counter from 0
+while (( counter < 10 )); do
+    if (( counter < 9 )); then
+        echo "Best School"  # Print "Best School" for the first 9 iterations
+    elif (( counter == 9 )); then
+        echo "Hi"           # Print "Hi" for the 10th iteration
+    fi
+    ((counter++))  # Increment counter by 1
+done
+
+# Print "Best School" one last time after the loop
+echo "Best School"
+
